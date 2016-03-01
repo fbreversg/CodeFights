@@ -1,3 +1,23 @@
+"""
+We will call an integer N good if either 5 * N2 - 4 or 5 * N2 + 4 is an exact square of an integer. You are given an array of requests, where each request is an integer given as a string.
+
+Return an array of responses, such that for each i the ith element of the answer is the requestith good integer.
+
+Example:
+
+good_numbers(["1", "2", "3"]) = [1, 2, 3].
+The first good number is 1, the second is 2, and the third is 3.
+good_numbers(["4"]) = [5].
+The fourth good number is 5.
+[input] array.string requests
+
+1 ≤ requests.size() ≤ 100
+1 ≤ requests[i] ≤ 1018
+[output] array.integer
+
+Array of integers, such that its ith element is the requestith good integer.
+"""
+
 import math
 
 def is_square(integer):
